@@ -1,0 +1,65 @@
+.progress-gradient {
+  background: linear-gradient(to right, #6ec1e4, #f2a2c9, #5b7dcd);
+}
+
+.top-glow {
+  box-shadow: 0 -26px 20px rgba(255, 165, 0, 0.4); /* Changed to a warmer tone */
+}
+
+/* Define the keyframes for the blinking animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the dot class */
+.dot {
+  width: 8px; /* Increased dot size */
+  height: 8px; /* Increased dot size */
+  background-color: #ffeb3b; /* Changed to a bright yellow color */
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  animation: blink 1.5s infinite; /* Slower blink */
+}
+
+.circle-outer {
+  background: linear-gradient(to bottom, #4caf50, #1b3a26); /* Changed to green tones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vw;
+  max-width: 360px;
+  max-height: 360px;
+}
+
+.circle-inner {
+  background: radial-gradient(circle, #00796b, #004d40); /* Changed to teal tones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-60px); /* Increased the distance of the float */
+  }
+}

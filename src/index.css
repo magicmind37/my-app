@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans; /* Using Tailwind's utility class for sans-serif */
+    @apply bg-gray-900 text-gray-100; /* Set a background color and text color for better contrast */
+}
